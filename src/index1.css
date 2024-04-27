@@ -1,0 +1,64 @@
+.selectioncontainer {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selection {
+    height: 50%;
+    width: 40%;
+    border: 1px solid black;
+    z-index: 100;
+    padding: 15px 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+}
+
+.selection header p {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.selection .images {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+    height: 70%;
+    width: 100%;
+    padding: 15px;
+}
+
+.selection .images button {
+    height: 50%;
+    width: 30%;
+}
+
+.ft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+}
+
+.ft button {
+    height: 50%;
+    width: 20%;
+    margin: 0 10px;
+    display: flex;
+    padding: 0 15px;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+}
+
+.ft button:first-child {
+    background-color: #979797;
+}
+.ft button:nth-child(2) {
+    background-color: #03c988;
+}

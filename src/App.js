@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Models from "./Models";
+import Model from "./model";
+import Admin2 from "./admin2";
+import Scenes from "./scenes";
+import { useEffect, useRef } from "react";
+import Selection from "./selection";
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div>
     </div>
+      <Model />
+      {/* <iframe className="frame" src="http://localhost:5000/"></iframe> */}
+      <div className="blur" id="blur"></div>
+    </>
   );
 }
 

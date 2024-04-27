@@ -7,7 +7,130 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+.blur {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: backdrop-filter 2s;
+  z-index: -100;
+  backdrop-filter: blur(0);
+}
+
+.bluron {
+  backdrop-filter: blur(10px);
+}
+
+#scene {
+  border: 1px solid red;
+  height: 500px;
+  width: 500px;
+  position: relative;
+}
+
+#box {
+  position: absolute;
+}
+
+.admin2 form input,
+.admin2 form button {
+  position: absolute;
+  border: 1px solid black;
+  z-index: 100;
+} 
+
+#x {
+  top: 0px;
+}
+
+#y {
+  top: 50px;
+}
+
+#z {
+  top: 100px;
+}
+
+#rx {
+  top: 150px;
+}
+
+#ry {
+  top: 200px;
+}
+
+#rz {
+  top: 250px;
+}
+
+#add, #submit, #delete {
+  cursor: pointer;
+}
+
+#add {
+  top: 350px;
+}
+
+#s {
+  top: 300px;
+}
+
+#val {
+  top: 560px;
+}
+
+#delete {
+  top: 510px;
+}
+
+#image {
+   top: 400px;
+}
+
+#choose {
+  top: 460px;
+}
+
+#or {
+  position: absolute;
+  top: 430px;
+  z-index: 100;
+}
+
+.scenes img {
+  height: 100%;
+  width: 350px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.scenes {
+  height: 150px;
+  width: 80%;
+  border-radius: 5px;
+  overflow-x: scroll;
+  display: flex;
+  column-gap: 2px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  justify-content: center;
+  align-items: center;
+}
+
+.frame {
+  height: 500px;
+  width: 800px;
+}
+#nextScene{
+  position: absolute;
+  top: 200px;
+} 
